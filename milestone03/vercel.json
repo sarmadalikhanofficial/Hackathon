@@ -1,5 +1,0 @@
-{
-    "rewrites": [
-      { "source": "/(.*)", "Milestone-1.html": "/" }
-    ]
-  }
