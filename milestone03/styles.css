@@ -10,18 +10,17 @@
 
 body {
     font-family: 'Times New Roman', Times, serif;
-    margin: 20px;
+    margin: 0;
     padding: 0;
-    background-color: #e5e5e5;
+    background-color: #0e1111;
     color: #333; /* Default text color */
     transition: background-color 0.3s, color 0.3s;
-  }
-  
-  body.dark-mode {
-    background-color: #0e1111;
-    color: #fff;
-  }
-  
+}
+
+body.dark-mode {
+    background-color: #fff; /* White mode color  */
+    color: #0e1111;
+}
 
 #myButton {
     display: block;
@@ -31,30 +30,46 @@ body {
     border: none;
     border-radius: 4px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    margin-top: 10px;
+    margin-top: 100%;
     font-size: 18px;
     font-family: 'sf-rounded';
     padding: 10px;
     cursor: pointer;
+    text-align: center;
+    max-width: 600px;
+    margin: auto;
+    transition: background-color 0.3s, color 0.3s; /* Added color transition */
 }
 
-#myButton :hover {
-    color: blue;
+#myButton:hover {
+    background-color: rgb(30, 40, 43);
+}
+
+/* Dark mode styling for #myButton */
+body.dark-mode #myButton {
+    background-color: rgb(36, 47, 51); /* Keep the dark background */
+    color: white; /* Ensure text color is white */
 }
 
 form {
     margin: auto;
-    background-color: rgb(228, 242, 255);
+    background-color: #f9f9f9;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     padding: 20px;
     max-width: 600px;
+    transition: background-color 0.3s;
+}
+
+form.dark-mode {
+    background-color: #2a2f32;
 }
 
 h1 {
     text-align: center;
     color: black;
     font-family: 'cinzel';
+    
 }
 
 fieldset {
@@ -63,6 +78,11 @@ fieldset {
     padding: 20px;
     margin-bottom: 20px;
     background-color: aliceblue;
+    transition: background-color 0.3s;
+}
+
+fieldset.dark-mode {
+    background-color: #3a3f43;
 }
 
 legend {
@@ -75,16 +95,21 @@ label {
     display: block;
     margin-top: 10px;
     color: black;
-
 }
 
-input,textarea {
+input, textarea {
     margin-top: 4px;
     padding: 8px;
     width: calc(100% - 1px);
     border: 1px solid skyblue;
     border-radius: 4px;
     box-sizing: border-box;
+}
+
+input.dark-mode, textarea.dark-mode {
+    background-color: #2a2f32;
+    color: white;
+    border-color: #555;
 }
 
 button {
@@ -102,7 +127,7 @@ button {
     cursor: pointer;
 }
 
-button :hover {
+button:hover {
     color: blue;
 }
 
@@ -114,14 +139,25 @@ button :hover {
     border-radius: 8px;
     background-color: rgb(228, 242, 255);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s;
 }
 
-#resume-display h2 {
-    color: black;
+#resume-display.dark-mode {
+    background-color: #2a2f32;
 }
-
 
 footer {
     text-align: center;
     padding: 10px;
-  }
+    font-size: 14px;
+    color: white;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #66b3ff;
+}
