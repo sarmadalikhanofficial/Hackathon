@@ -1,16 +1,50 @@
-const button = document.getElementById("myButton") as HTMLButtonElement;
-button.addEventListener("click", () => {
-  document.body.classList.toggle("dark-mode");
-});
+// Get the dark mode toggle button
+const toggleButton1 = document.getElementById("myButton") as HTMLButtonElement | null;
+
+// Get the form, input, textarea, fieldset, and resume-display elements
+const form2 = document.getElementById("resume-form") as HTMLFormElement | null;
+const input = document.querySelectorAll('input, textarea') as NodeListOf<HTMLInputElement | HTMLTextAreaElement>;
+const fieldset = document.querySelectorAll('fieldset') as NodeListOf<HTMLElement>;
+const resumeDisplay1 = document.getElementById("resume-display") as HTMLElement | null;
+
+// Add event listener to toggle dark mode on button click
+if (toggleButton1) {
+    toggleButton1.addEventListener("click", () => {
+        // Check if form and resumeDisplay exist    
+        if (form2 && resumeDisplay1) {
+            // Toggle dark mode class for body and form
+            document.body.classList.toggle("dark-mode");
+            form2.classList.toggle("dark-mode");
+
+            // Toggle dark mode for input and textarea fields
+            input.forEach((input) => {
+                input.classList.toggle('dark-mode');
+            });
+
+            // Toggle dark mode for fieldsets
+            fieldset.forEach((fieldset) => {
+                fieldset.classList.toggle('dark-mode');
+            });
+
+            // Toggle dark mode for resume display section
+            resumeDisplay1.classList.toggle("dark-mode");
+        } else {
+            console.error("Form or resume display not found.");
+        }
+    });
+} else {
+    console.error("Toggle button not found.");
+}
+
 
 
 // Grab elements from the DOM 
-const form = document.getElementById("resume-form") as HTMLFormElement;
-const resumeDisplayElement = document.getElementById("resume-display") as HTMLDivElement;
+const form3 = document.getElementById("resume-form") as HTMLFormElement;
+const resumeDisplayElement1 = document.getElementById("resume-display") as HTMLDivElement;
 
 
 //handle form submission
-form.addEventListener('submit', (event: Event) => {
+form3.addEventListener('submit', (event: Event) => {
     event.preventDefault(); //prevent page reload
 
     //collects input
@@ -46,8 +80,8 @@ form.addEventListener('submit', (event: Event) => {
     `;
 
     //display gen resume
-    if(resumeDisplayElement){
-        resumeDisplayElement.innerHTML = resumeHTML;
+    if(resumeDisplayElement1){
+        resumeDisplayElement1.innerHTML = resumeHTML;
     } else {
         console.error('The Resume Dislay element is missing');
     }
