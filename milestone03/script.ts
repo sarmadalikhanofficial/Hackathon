@@ -38,6 +38,8 @@ if (toggleButton1) {
 
 
 
+
+
 // Grab elements from the DOM 
 const form3 = document.getElementById("resume-form") as HTMLFormElement;
 const resumeDisplayElement1 = document.getElementById("resume-display") as HTMLDivElement;
