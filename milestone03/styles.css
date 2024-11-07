@@ -22,34 +22,57 @@ body.dark-mode {
     color: #0e1111;
 }
 
+
+
+p.dark-mode,
+label.dark-mode,
+fieldset.dark-mode legend {
+    color: white; /* Set text color for headers, paragraphs, and labels in dark mode */
+}
+
+
+
+
+
 #myButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: auto;
     display: block;
-    width: 100%;
+    /* width: 100%; */
     background-color: rgb(36, 47, 51);
     color: rgb(255, 255, 255);
     border: none;
     border-radius: 4px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    margin-top: 100%;
+    margin-top: 290%;
     font-size: 18px;
     font-family: 'sf-rounded';
     padding: 10px;
     cursor: pointer;
     text-align: center;
-    max-width: 600px;
+    max-width: 300px;
     margin: auto;
     transition: background-color 0.3s, color 0.3s; /* Added color transition */
+    z-index: 1000; /* Ensure it’s above other elements */
+    
 }
 
 #myButton:hover {
     background-color: rgb(30, 40, 43);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    transform: scale(1.0);
 }
 
 /* Dark mode styling for #myButton */
 body.dark-mode #myButton {
-    background-color: rgb(36, 47, 51); /* Keep the dark background */
-    color: white; /* Ensure text color is white */
+    background-color: rgb(238, 238, 238); /* Keep the dark background */
+    color: #000; /* Ensure text color is white */
 }
+
+
+
 
 form {
     margin: auto;
@@ -67,10 +90,14 @@ form.dark-mode {
 
 h1 {
     text-align: center;
-    color: black;
+    color: rgb(255, 255, 255);
     font-family: 'cinzel';
     
 }
+body.dark-mode h1 {
+    color: rgb(0, 0, 0); /* Change label text to white in dark mode */
+}
+
 
 fieldset {
     border: 2px solid rgb(135, 230, 235);
@@ -94,7 +121,11 @@ legend {
 label {
     display: block;
     margin-top: 10px;
-    color: black;
+    color: rgb(255, 255, 255);
+}
+
+body.dark-mode label {
+    color: rgb(0, 0, 0); /* Change label text to white in dark mode */
 }
 
 input, textarea {
@@ -144,7 +175,10 @@ button:hover {
 
 #resume-display.dark-mode {
     background-color: #2a2f32;
+    color: white;   
 }
+
+
 
 footer {
     text-align: center;
