@@ -69,14 +69,13 @@ form3.addEventListener('submit', (event: Event) => {
     <h3>Education</h3>
     <p>${education}</p>
     
+    <h3>Experience</h3>
+    <p>${experience}</p>
+
     <h3>Skills</h3>
     <p>${skills}</p>
     
-    <h3>Experience</h3>
-    <p>${experience}</p>
     
-    <h3>Education</h3>
-    <p>${education}</p>
 
 
     `;
