@@ -48,7 +48,7 @@ if (toggleButton1) {
     // generate resume HTML
     const resumeHTML = `
     <div style="font-family: Arial, sans-serif; color: #000000; max-width: 600px; margin: auto;">
-        <h1 style="font-size: 2em; text-align: left; font-family: 'Cinzel', medium; color: #000000;"><u>${name}</u></h1>
+        <h1 style="font-size: 2em; text-align: left; font-family: 'Cinzel', medium; color: #000000;">${name}</h1>
             <section id="contact" style="margin-bottom: 20px;">  
                 <h2 style="font-family: 'Agdasima', sans-serif; font-weight: 24px; color: #000000;"><u>CONTACT</u></h2>
             
