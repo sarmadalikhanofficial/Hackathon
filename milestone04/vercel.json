@@ -1,5 +1,6 @@
+
 {
-    "rewrites": [
-      { "source": "/(.*)", "milestone-04.html": "/" }
-    ]
-  }
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/milestone-04.html" }
+  ]
+}
