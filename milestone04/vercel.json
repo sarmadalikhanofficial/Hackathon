@@ -1,0 +1,5 @@
+{
+    "rewrites": [
+      { "source": "/(.*)", "milestone-04.html": "/" }
+    ]
+  }
