@@ -233,8 +233,7 @@ button:hover {
 }
  /*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  */
 
-
-/* footer container styling */
+/* Footer container styling */
 footer {
     text-align: center;
     padding: 10px;
@@ -243,25 +242,48 @@ footer {
     font-family: 'sf-rounded';
 }
 
-/* dark mode footer text color */
-.dark-mode footer {
-    color: rgb(0, 0, 0); 
-}
-
-/* link hover color */
-footer .sxr:hover {
-    color: #66b3ff;
-    transition: color 0.3s, color 0.3s;
-    text-decoration: none; /* to remove underline*/
-}
-
-/* style specifically for @sxrmd.ai text with Conthrax font */
-footer .sxr {
+/* Remove underline from links */
+footer a, footer .sxr {
     font-family: "conthrax-sf"; /* Apply Conthrax font */
-    color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255); /* White color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s, transform 0.3s ease; /* Smooth transition for color and scaling */
+}
+
+/* Dark mode footer text color */
+.dark-mode footer {
+    color: rgb(0, 0, 0);
+}
+
+.dark-mode .sxr:hover {
+    font-family: "conthrax-sf"; 
+    color: #66b3ff;
+    text-decoration: none; /* remove underline */
+    transition: color 0.3s, transform 0.3s ease; /* smooth transition for color and scaling */
+
+}
+
+/* Link hover color */
+footer .sxr:hover {
+    font-family: "conthrax-sf"; 
+    color: #66b3ff;
+    text-decoration: none; /* remove underline */
+    transition: color 0.3s, transform 0.3s ease; /* smooth transition for color and scaling */
+ 
+}
+
+.dark-mode a:hover {
+    font-family: "conthrax-sf"; 
+    color: #66b3ff;
+    text-decoration: none; /* remove underline */
+    transition: color 0.3s, transform 0.3s ease; /* smooth transition for color and scaling */
 }
 
 /* dark mode color for @sxrmd.ai text */
-.dark-mode footer a .sxr {
+.dark-mode footer .sxr {
     color: rgb(0, 0, 0);
+}
+
+footer a:focus, footer a:active {
+    outline: none; 
 }
