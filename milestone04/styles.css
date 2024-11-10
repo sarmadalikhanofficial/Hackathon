@@ -8,6 +8,11 @@
     src: url(./Cinzel-Bold.otf);
 }
 
+@font-face {
+    font-family: "conthrax-sf";
+    src: url(./conthrax-sb.otf);
+}
+
 body {
     font-family: 'Times New Roman', Times, serif;
     margin: 0;
@@ -16,6 +21,20 @@ body {
     color: #333; /* Default text color */
     transition: background-color 0.3s, color 0.3s;
 }
+
+
+/* <uniquifier>: Use a unique and descriptive class name
+<weight>: Use a value from 300 to 800
+
+.open-sans-<uniquifier> {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+*/
 
 .main-image img {
     width: 150px;
@@ -74,6 +93,7 @@ fieldset.dark-mode legend {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
     transform: scale(1.0);
 }
+
 
 /* Dark mode styling for #myButton */
 body.dark-mode #myButton {
@@ -169,7 +189,7 @@ button {
 }
 
 button:hover {
-    color: blue;
+    background-color: #66b3ff;
 }
 
 #resume-display {
@@ -190,19 +210,57 @@ button:hover {
 }
 
 
+#download-pdf {
+    display: block;
+    width: 100%; /* Matches the full width of the container */
+    max-width: 600px; /* Same max-width as #resume-display */
+    margin: 20px auto; /* Center the button */
+    background-color: skyblue;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    font-size: 18px;
+    font-family: 'sf-rounded';
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+}
 
+#download-pdf:hover {
+    background-color: #66b3ff;
+}
+ /*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  */
+
+
+/* Footer container styling */
 footer {
     text-align: center;
     padding: 10px;
-    font-size: 14px;
-    color: white;
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+    font-family: 'sf-rounded';
 }
 
-footer a {
-    color: #fff;
-    text-decoration: none;
+/* Dark mode footer text color */
+.dark-mode footer {
+    color: rgb(0, 0, 0); 
 }
 
-footer a:hover {
+/* Link hover color */
+footer .sxr:hover {
     color: #66b3ff;
+    transition: color 0.3s, color 0.3s;
+}
+
+/* Style specifically for @sxrmd.ai text with Conthrax font */
+footer .sxr {
+    font-family: "conthrax-sf"; /* Apply Conthrax font */
+    color: rgb(255, 255, 255);
+}
+
+/* Dark mode color for @sxrmd.ai text */
+.dark-mode footer a .sxr {
+    color: rgb(0, 0, 0);
 }
