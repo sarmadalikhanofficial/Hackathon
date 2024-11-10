@@ -18,12 +18,12 @@ body {
     margin: 0;
     padding: 0;
     background-color: #0e1111;
-    color: #333; /* Default text color */
+    color: #333; /* default text color */
     transition: background-color 0.3s, color 0.3s;
 }
 
 
-/* <uniquifier>: Use a unique and descriptive class name
+/* <uniquifier>: use a unique and descriptive class name
 <weight>: Use a value from 300 to 800
 
 .open-sans-<uniquifier> {
@@ -47,7 +47,7 @@ body {
 }
 
 body.dark-mode {
-    background-color: #fff; /* White mode color  */
+    background-color: #fff; /* white mode color  */
     color: #0e1111;
 }
 
@@ -56,7 +56,7 @@ body.dark-mode {
 p.dark-mode,
 label.dark-mode,
 fieldset.dark-mode legend {
-    color: white; /* Set text color for headers, paragraphs, and labels in dark mode */
+    color: white; /* set text color for headers, paragraphs, and labels in dark mode */
 }
 
 
@@ -83,8 +83,8 @@ fieldset.dark-mode legend {
     text-align: center;
     max-width: 300px;
     margin: auto;
-    transition: background-color 0.3s, color 0.3s; /* Added color transition */
-    z-index: 1000; /* Ensure it’s above other elements */
+    transition: background-color 0.3s, color 0.3s; /* added color transition */
+    z-index: 1000; /* ensure it’s above other elements */
     
 }
 
@@ -95,10 +95,10 @@ fieldset.dark-mode legend {
 }
 
 
-/* Dark mode styling for #myButton */
+/* dark mode styling for #myButton */
 body.dark-mode #myButton {
-    background-color: rgb(238, 238, 238); /* Keep the dark background */
-    color: #000; /* Ensure text color is white */
+    background-color: rgb(238, 238, 238);
+    color: #000; 
 }
 
 
@@ -125,7 +125,7 @@ h1 {
     
 }
 body.dark-mode h1 {
-    color: rgb(0, 0, 0); /* Change label text to white in dark mode */
+    color: rgb(0, 0, 0); /* change label text to white in dark mode */
 }
 
 
@@ -155,7 +155,7 @@ label {
 }
 
 body.dark-mode label {
-    color: rgb(0, 0, 0); /* Change label text to white in dark mode */
+    color: rgb(0, 0, 0); /* change label text to white in dark mode */
 }
 
 input, textarea {
@@ -212,9 +212,9 @@ button:hover {
 
 #download-pdf {
     display: block;
-    width: 100%; /* Matches the full width of the container */
-    max-width: 600px; /* Same max-width as #resume-display */
-    margin: 20px auto; /* Center the button */
+    width: 100%; /* matches the full width of the container */
+    max-width: 600px; /* same max-width as #resume-display */
+    margin: 20px auto; /* center the button */
     background-color: skyblue;
     color: black;
     border: none;
@@ -234,7 +234,7 @@ button:hover {
  /*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  */
 
 
-/* Footer container styling */
+/* footer container styling */
 footer {
     text-align: center;
     padding: 10px;
@@ -243,24 +243,25 @@ footer {
     font-family: 'sf-rounded';
 }
 
-/* Dark mode footer text color */
+/* dark mode footer text color */
 .dark-mode footer {
     color: rgb(0, 0, 0); 
 }
 
-/* Link hover color */
+/* link hover color */
 footer .sxr:hover {
     color: #66b3ff;
     transition: color 0.3s, color 0.3s;
+    text-decoration: none; /* to remove underline*/
 }
 
-/* Style specifically for @sxrmd.ai text with Conthrax font */
+/* style specifically for @sxrmd.ai text with Conthrax font */
 footer .sxr {
     font-family: "conthrax-sf"; /* Apply Conthrax font */
     color: rgb(255, 255, 255);
 }
 
-/* Dark mode color for @sxrmd.ai text */
+/* dark mode color for @sxrmd.ai text */
 .dark-mode footer a .sxr {
     color: rgb(0, 0, 0);
 }
