@@ -27,48 +27,49 @@
 
     <h1 class="head">Dynamic Editable - Shareable Resume Builder</h1>
     <form id="resume-form">
-            <fieldset>
-                <legend>Personal Information</legend>
-                <label for="username"> Username:</label>
-                <input type="text" id="username" placeholder="Enter your username" required>
-    
-                <label for="name"> Name:</label>
-                <input type="text" id="name" placeholder="Enter your name" required>
-            </fieldset>
+        <div class="form" id="hidden">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label for="username"> Username:</label>
+                    <input type="text" id="username" placeholder="Enter your username" required>
+        
+                    <label for="name"> Name:</label>
+                    <input type="text" id="name" placeholder="Enter your name" required>
+                </fieldset>
 
-            <fieldset>
-                <legend>Contact Information</legend>
-                <label for="phone"> Phone Number:</label>
-                <input type="tel" id="phone" placeholder="Enter your phone number" required>
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <label for="phone"> Phone Number:</label>
+                    <input type="tel" id="phone" placeholder="Enter your phone number" required>
+                    
+                    <label for="email"> Email:</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+
+                    <label for="address"> Address:</label>
+                    <input type="text" id="address" placeholder="Enter your address" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Skills</legend>
+                    <label for="skills">Skills:</label>
+                    <textarea id="skills" placeholder="Enter your skills" rows="4" required></textarea>
+                </fieldset>
                 
-                <label for="email"> Email:</label>
-                <input type="email" id="email" placeholder="Enter your email" required>
+                <fieldset>
+                    <legend>Education</legend>
+                    <textarea id="education" placeholder="Enter your education" rows="4" required></textarea>
+                </fieldset>
 
-                <label for="address"> Address:</label>
-                <input type="text" id="address" placeholder="Enter your address" required>
-            </fieldset>
-
-            <fieldset>
-                <legend>Skills</legend>
-                <label for="skills">Skills:</label>
-                <textarea id="skills" placeholder="Enter your skills" rows="4" required></textarea>
-            </fieldset>
-            
-            <fieldset>
-                <legend>Education</legend>
-                <textarea id="education" placeholder="Enter your education" rows="4" required></textarea>
-            </fieldset>
-
-            <fieldset>
-                <legend>Experience</legend>
-                <textarea id="experience" placeholder="Enter your work experience" rows="4" required></textarea>
-            </fieldset>
-            
-            <fieldset>
-                <legend>Activities and Interests</legend>
-                <textarea id="actInt" placeholder="Enter your Activities and Interests" rows="4" required></textarea>
-            </fieldset>
-            
+                <fieldset>
+                    <legend>Experience</legend>
+                    <textarea id="experience" placeholder="Enter your work experience" rows="4" required></textarea>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Activities and Interests</legend>
+                    <textarea id="actInt" placeholder="Enter your Activities and Interests" rows="4" required></textarea>
+                </fieldset>
+                </div>                
 
             <button type="submit"> <b>Generate Resume</b></button>
     </form>
@@ -77,21 +78,18 @@
     <div id="resume-display" contenteditable="true">
         <!-- resume will generate below -->
     </div>
-    <script src="script.js"></script>
-
-    
     <br>
     <br>
-    <button id="downloadPDF"><b>Download PDF</b></button> 
-     <!-- link to share and download resume -->
-     <div id="share" style="display: none;">
+    <div id="share">
         <p class="text">Here is the link to share resume:</p>
         <a href="#" id="share-link"></a><br>
+        <button id="download">Download PDF</button>
      </div>
     
     <footer>
         Made by <a href="https://www.instagram.com/sxrmd.ai/" target="_blank"><span class="sxr">@sxrmd.ai</span></a>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
