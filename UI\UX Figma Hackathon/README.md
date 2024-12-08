@@ -6,7 +6,7 @@ Shopco is an open-source project that converts a Figma design of an e-commerce w
 
 ## Table of Contents
 
-- [Shopco](#shopco)
+- [sxrmdofficial](#sxrmdofficial)
   - [Table of Contents](#table-of-contents)
   - [Overview](#overview)
   - [Demo](#demo)
@@ -50,7 +50,7 @@ Check out the live demo: [Shopco Demo](https://next-ecommerce-shopco.vercel.app/
 - **Redux** - A state management library used for the shopping cart and global app state.
 - **Framer Motion** - A library for animations and interactions in React.
 - **ShadCN UI** - A collection of beautiful, accessible, and customizable UI components.
-- **Figma** - The design tool used as the source of the project’s layout. The [Figma file](https://www.figma.com/community/file/1273571982885059508/e-commerce-website-template-freebie) designed by [Hamza Naeem](https://www.figma.com/@hamzauix)
+- **Figma** - The design tool used as the source of the project’s layout. 
 
 ## Installation
 
@@ -59,8 +59,8 @@ To get started with Shopco locally, follow these steps:
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/mohammadoftadeh/next-ecommerce-shopco.git
-   cd next-ecommerce-shopco
+   git clone https://github.com/sarmadalikhanofficial/UI%5CUX%20Figma%20Hackathon.git
+   cd UI%5CUX%20Figma%20Hackathon
    ```
 
 2. **Install dependencies:**
@@ -131,7 +131,7 @@ Contributions are welcome! If you'd like to contribute, Please follow these step
 
 ## Issues
 
-Feel free to submit issues for any bugs, feature requests, or general questions related to the project. You can also reach out via [email](mailto:mr.mohammadoftadeh@gmail.com) for support.
+Feel free to submit issues for any bugs, feature requests, or general questions related to the project. You can also reach out via [email](mailto:sxrmdofficial@gmail.com) for support.
 
 ## License
 
@@ -141,6 +141,6 @@ This project is licensed under the MIT License - see the [LICENSE](https://opens
 
 Feel free to reach out to:
 
-- **Name**: Mohammad Oftadeh
-- **Email**: [mr.mohammadoftadeh@gmail.com](mailto:mr.mohammadoftadeh@gmail.com)
-- **GitHub**: [https://github.com/mohammadoftadeh](https://github.com/mohammadoftadeh)
+- **Name**: Sarmad Ali
+- **Email**: [mailto:sxrmdofficial@gmail.com](mailto:mailto:sxrmdofficial@gmail.com)
+- **GitHub**: [https://github.com/sarmadalikhanofficial](https://github.com/sarmadalikhanofficial)
